@@ -1,0 +1,492 @@
+*{
+    margin: 0;
+    padding: 0;  
+}
+body{
+    height: auto;
+    overflow-x: hidden;
+}
+
+/* BANNER AZUL ------------------------------------------*/
+
+.banner{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(15, 15, 41);
+    color: white;
+    font-size: 10px;
+    font-family: sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.banner button{ 
+    height: 20px;
+    border-radius: 15px;
+    padding: 0px 10px;
+    margin-left: 20px;
+    border: none;
+    background-color: rgb(61, 124, 167);
+    color: white;
+    font-size: 10px;  
+    cursor: pointer;
+}
+
+.banner p{
+    position: absolute;
+    top: 10px;
+    left: 30%;
+    margin: 0;
+    padding: 0;
+    padding-left: 150px;
+    
+}
+
+/* NAV BAR ------------------------------------*/
+
+
+.barra{
+    display: flex;
+    position: absolute;
+    z-index: 100;
+    top: 30px;
+    color: aliceblue;
+    font-size: 11px;
+    align-items: center;
+    height: 80px;
+    width: 100vw;
+}
+.logoMenu:hover{
+    text-decoration: none;
+}
+.fMenu {
+    display: flex;
+    align-items: center;
+    width: 40vw;
+    height: 80px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+   
+}
+.sMenu{
+    display: flex;
+    align-items: center;
+    width: 45vw;
+    justify-content: end;
+    height: 80px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    
+}
+.fMenu a{
+    color: white;
+    text-decoration: none;
+}
+.sMenu a{
+    color: white;
+    text-decoration: none;
+}
+.sMenu a:hover{
+    text-shadow: 10px 10px 5px 0px rgba(0,0,0,0.33);
+    color: white;
+    text-decoration: none;
+}
+.fMenu a:hover{
+    text-shadow: 10px 10px 5px 0px rgba(0,0,0,0.33);
+    text-decoration: none;
+    color: white;
+}
+.logo{
+   height: 80px;
+   margin: 0;
+   display: flex;
+   align-items: center;
+   padding-left: 60px;
+   font-size: 21px;
+   color: rgb(61, 124, 167);
+   font-weight: bold;
+
+}
+.fMenu li{
+    padding-left: 40px ;
+    list-style:  none;
+}
+
+.sMenu li{
+    padding-left: 50px;
+    list-style:  none;
+}
+
+/* CARRUCEL ------------------------------------*/
+
+
+.contenedor{
+    height: calc(100vh - 40px);
+}
+.cartel{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    width: 200px;
+    height: 200px;
+    color: aliceblue;
+    font-weight: bolder;
+}
+.cartel button{
+    width: 160px;
+    height: 35px;
+    background-color: whitesmoke;
+    border: none;
+    color: black;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+
+/* SEGUNDO BANNER ------------------------------------*/
+
+
+.second{
+    height: 260px;
+    width: 100%;
+    background-color:#0a0a0a;
+    display: flex;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    align-items:center ;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.banerGrisTexto{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 230px;
+    font-size: 25px;
+    text-align: center;
+    padding-left: 90px;
+    color: white;
+}
+.textoChico{
+    font-size: 14px;
+}
+.banerGrisBotonContainer{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 50px;
+    height: 230px;
+    font-size: 12px;
+    font-weight: bolder;
+}
+.banerGrisBoton{
+    width: 180px;
+    height: 47px;
+    background-color: whitesmoke;
+    border: none;
+    margin-left: 15px;
+    font-weight: bolder;
+    color: black;
+    cursor: pointer;
+
+}
+
+
+/* PRODUCTOS PAGINA PRINCIPAL */
+
+.productos{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(185, 185, 185);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 250px;
+    height: 350px;
+    background-color: rgb(253, 252, 252);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   border: none;
+   border-radius: 4px;
+    padding: 5px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.33);
+    
+    
+}
+.box img{
+    max-width: 200px;
+    height: 200px;
+    padding-bottom: 20px;
+}
+.box h4{
+    font-size: 15px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+.content button{
+    border: none;
+    cursor: pointer;
+}
+
+.content p{
+    border: 1px solid rgb(61, 124, 167);
+    background-color: rgb(61, 124, 167);;
+    padding: 2px 5px;
+}
+
+/* accesos directos */
+
+.acces{
+    width: 1005;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.pr1{
+    width: 45%;
+    height:90%;
+    background-image: url(./img/textured_tops_homepage_block_desktop_1442x.progressive.webp);
+    background-size: cover;
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 40px;
+    
+}
+.pr2{
+    width: 45%;
+    height: 90%;
+    background-image: url(./img/solstice_staples_homepage_block_desktop_1442x.progressive.webp);
+    background-size: cover;
+    margin-left:10px ;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.textoPr{
+    width: 200px;
+    height: 90%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.textoPr button{
+    width: 150px;
+    height: 43px;
+    background-color: whitesmoke;
+    border: none;   
+    color: black;
+    cursor: pointer;
+}
+.textoPr p{
+    font-size: 14px;
+}
+
+.recicle{
+    width: 92%;
+    height: 450px;
+    background-image: url(./img/bosquwe.webp);
+    background-size: cover;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.recicleContainer{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recicleText{
+    width: 35%;
+    height: 50%;
+    text-align: center;
+    color: white;
+}
+.secondText{
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+.recicleText button{
+    width: 160px;
+    height: 35px;
+    background-color: whitesmoke;
+    border: none;
+    color: black;
+    margin-top: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+
+/*footer --------------*/
+
+
+.footerBoxContainer{
+    width: 100%;
+    height: 290px;
+    border-top: 2px solid black;
+    margin-top: 50px;
+    display: flex;
+    
+}
+.footerBox{
+    width: 25%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: black;
+    
+}
+
+.footerBox h4{
+    font-size: 13px;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: black;
+}
+.footerBox p{
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+.emailButton{
+    width: 28px;
+    height: 28px;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    border: none;
+    font-weight: bolder;
+    cursor: pointer;
+
+}
+.iconos{display: flex;
+margin-left: 20px;}
+
+.iconos li{
+    margin: 10px;
+    list-style: none;
+}
+.registText{
+    margin-left: 30px;
+    font-size: 10px;
+}
+
+
+/* SHOP HTML ---------------------- */
+
+.mainShopContainer{
+    width: 100%;
+    height: auto;
+    background-image: url(./img/Q422_homepage_Q4_Last_Call_Sale_desktop_1442x.progressive.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+}
+.shopOrganizador{
+    display: flex;
+    margin-top: 60px;
+    
+}
+.navegadorShop{
+    width: 250px;
+    height: 80vh;
+    background-color: beige;
+    position:sticky;
+    top: 10px;
+    border-radius: 5px;
+    margin-left:20px;
+   
+}
+.navegadorShop ul{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.navegadorShop ul li{
+    margin-top: 20px;
+    cursor: pointer;
+}
+#productosShop{
+width: 80%;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f9fb;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+.loader-hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after{
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #7449f5;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading{
+    form{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}
